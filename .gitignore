@@ -1,0 +1,13 @@
+data/
+doc/
+
+*.png
+*.sh
+
+# emacs temp files
+*~
+*.rb~
+*.rb#
+*#*.rb
+*.sh~
+*.yml~
