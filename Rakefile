@@ -11,4 +11,4 @@ Rake::RDocTask.new do |rd|
   rd.rdoc_files.include("README", "lib/**/*.rb")
 end
 
-task :default => :spec
+task :default => [:spec, :cucumber]

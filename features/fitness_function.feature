@@ -4,10 +4,11 @@ Feature: Calculate Fitness of an S-expression
   I want to be able to calculate the fitness of a candidate solution
 
   Scenario Outline: Calculate the fitness of an s-expression
-    Given an s-expression
+    Given the program "<ruby_program>"
     And a fitness function
     Then the fitness value is <fitness>
 
   Examples:
-    | fitness |
-    | 1       |
+    | ruby_program                                                               | fitness |
+    | def foo(a, b); if a == b; return 1; else; return 2; end; end               | 2.55    |
+    | def bar(array); array.each do \|e\|; e.each do \|x\|; puts x end; end; end | 5.4     |
