@@ -11,7 +11,7 @@ Feature: Refactor Boolean Expression
     And a mutation rate of 0.1
     And a crossover rate of 0.5
     And a pool size of 10
-    And an iteration limit 0f 100
+    And an iteration limit of 100
     Then the program should be refactored to
     """
     def success?; !foo.nil? && (foo.valid? || foo.persisted?); end
