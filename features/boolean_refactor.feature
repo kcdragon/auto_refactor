@@ -10,7 +10,7 @@ Feature: Refactor Boolean Expression
     """
     And a mutation rate of 0.1
     And a crossover rate of 0.5
-    And a pool size of 10
+    And a population size of 10
     And an iteration limit of 100
     Then the program should be refactored to
     """

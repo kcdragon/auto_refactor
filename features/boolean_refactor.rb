@@ -21,7 +21,7 @@ end
 
 Then /^the program should be refactored to$/ do |expected_program|
   @gp.run
-  refactored_sexp = @gp.candidates.max { |c1, c2| c1.fitness <=> c2.fitness }
+  refactored_sexp = @gp.population.max { |c1, c2| c1.fitness <=> c2.fitness }
   actual_program = Ruby2Ruby.new.process refactored_sexp
   expect(actual_program).to eq expected_program
 end
