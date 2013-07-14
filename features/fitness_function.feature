@@ -4,7 +4,7 @@ Feature: Calculate Fitness of an S-expression
   I want to be able to calculate the fitness of a candidate solution
 
   Scenario Outline: Calculate the fitness of an s-expression
-    Given the program "<ruby_program>"
+    Given a program "<program>"
     And a fitness function
     Then the fitness value is <fitness>
 
