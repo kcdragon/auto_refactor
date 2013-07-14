@@ -9,6 +9,6 @@ Feature: Calculate Fitness of an S-expression
     Then the fitness value is <fitness>
 
   Examples:
-    | ruby_program                                                               | fitness |
+    | program                                                                    | fitness |
     | def foo(a, b); if a == b; return 1; else; return 2; end; end               | 2.55    |
     | def bar(array); array.each do \|e\|; e.each do \|x\|; puts x end; end; end | 5.4     |
